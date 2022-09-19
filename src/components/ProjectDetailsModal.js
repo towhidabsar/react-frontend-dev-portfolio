@@ -32,6 +32,7 @@ class ProjectDetailsModal extends Component {
           var img = images.map((elem, i) => {
             return <div key={i} data-src={elem} />;
           });
+          var img = images[0]
         }
       }
     }
@@ -48,7 +49,7 @@ class ProjectDetailsModal extends Component {
         </span>
         <div className="col-md-12">
           <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
-            <div className="slider-tab">
+            {/* <div className="slider-tab">
               <span
                 className="iconify slider-iconfiy"
                 data-icon="emojione:red-circle"
@@ -67,14 +68,16 @@ class ProjectDetailsModal extends Component {
                 data-icon="twemoji:green-circle"
                 data-inline="false"
               ></span>
-            </div>
-            <AwesomeSlider
+            </div> */}
+            {/* <AwesomeSlider
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
               className="slider-image"
             >
               {img}
-            </AwesomeSlider>
+            </AwesomeSlider> */}
+            <img src={img} height="200" width="200"/>
+
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
