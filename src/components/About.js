@@ -22,9 +22,10 @@ class About extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
-            <div className="col-md-4 mb-5 center">
-              <div className="polaroid">
-                <span style={{ cursor: "auto" }}>
+            {/* <div className="col-md-4 mb-5 center"> */}
+            {/* <div className="polaroid"> */}
+            {/* <img src="../images/Icon.png" alt="profilepic" /> */}
+            {/* <span style={{ cursor: "auto" }}>
                   <img
                     height="250px"
                     src={profilepic}
@@ -42,14 +43,24 @@ class About extends Component {
                     icon={vueIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
-                </span>
-              </div>
-            </div>
+                </span> */}
+            {/* </div>
+            </div> */}
 
             <div className="col-md-8 center">
               <div className="col-md-10">
-                <div className="card">
-                  <div className="card-header">
+                <div
+                  className="card"
+                  style={{
+                    borderRadius: "25px",
+                  }}
+                >
+                  <div
+                    className="card-header"
+                    style={{
+                      borderRadius: "25px 25px 0 0",
+                    }}
+                  >
                     <span
                       className="iconify"
                       data-icon="emojione:red-circle"
@@ -77,7 +88,7 @@ class About extends Component {
                     }}
                   >
                     <br />
-                    <span className="wave">{hello} :) </span>
+                    <span className="wave">{hello}</span>
                     <br />
                     <br />
                     {about}

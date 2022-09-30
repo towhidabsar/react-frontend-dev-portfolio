@@ -85,6 +85,7 @@ class Experience extends Component {
               icon={
                 <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
               }
+              contentStyle={{ borderRadius: "50px" }}
             />
           </VerticalTimeline>
         </div>

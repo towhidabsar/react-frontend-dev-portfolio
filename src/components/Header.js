@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import { Image } from "react";
 
 class Header extends Component {
   titles = [];
@@ -27,27 +28,104 @@ class Header extends Component {
   render() {
     if (this.props.sharedData) {
       var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+      this.titles = this.props.sharedData.titles
+        .map((x) => [x.toUpperCase(), 1500])
+        .flat();
     }
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={50} />
-    }, (props, prevProp) => true);
+    const HeaderTitleTypeAnimation = React.memo(
+      () => {
+        return (
+          <Typical className="title-styles" steps={this.titles} loop={50} />
+        );
+      },
+      (props, prevProp) => true
+    );
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <div className="row aligner" style={{height: '100%'}}>
-          <div className="col-md-12">
+      <header
+        id="home"
+        style={{
+          height: window.innerHeight - 140,
+          display: "block",
+          background: "#fefacd",
+          backgroundImage: "url(../images/ui.jpg)",
+          // backgroundImage: "url(../images/ROC-3.jpg)",
+          // backgroundImage: "url(../images/Roc1.jpg)",
+          // backgroundImage: "url(../images/Roc2.jpg)",
+          backgroundSize: "contain",
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* create div that takes 50% of screen width and align content to the right */}
+
+        <div
+          className="row aligner"
+          style={{
+            height: "100%",
+            textAlign: "left",
+            alignContent: "start",
+            marginLeft: "3%",
+            paddingLeft: "3%",
+            width: "50%",
+            // background: "rgba(0, 0, 0, 0.5)",
+            float: "right",
+          }}
+        >
+          <div className="col-md-12" style={{ align: "right" }}>
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-              <br/>
-              <h1 className="mb-0">
+              <img src="../images/icon.png" alt="" width="200" height="200" />
+              <br />
+              <h1
+                className="mb-0"
+                style={{
+                  textAlign: "left",
+                  fontFamily: "Inter",
+                  fontWeight: "700",
+                }}
+              >
                 <Typical steps={[name]} wrapper="p" />
+                {/* Citizenly */}
               </h1>
               <div className="title-container">
-                <HeaderTitleTypeAnimation />
+                {/* <HeaderTitleTypeAnimation /> */}
+                Democratizing Urban Data Science
               </div>
-              <Switch
+              <div
+                className="partner-title"
+                style={{
+                  fontFamily: "Inter",
+                  fontSize: "1.5rem",
+                  marginTop: "30px",
+                }}
+              >
+                {/* In partnership with */}
+                <div className="partner-container">
+                  <img
+                    src="../images/nsf.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    style={{ marginRight: "30px" }}
+                  />
+                  <img
+                    src="../images/roc.jpg"
+                    alt=""
+                    width="100"
+                    height="80"
+                    style={{ marginRight: "30px" }}
+                  />
+                  <img
+                    src="../images/rit.png"
+                    alt=""
+                    width="75"
+                    height="80"
+                    style={{ marginRight: "30px" }}
+                  />
+                </div>
+              </div>
+              {/* <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
                 offColor="#baaa80"
@@ -86,7 +164,7 @@ class Header extends Component {
                   ></span>
                 }
                 id="icon-switch"
-              />
+              /> */}
             </div>
           </div>
         </div>

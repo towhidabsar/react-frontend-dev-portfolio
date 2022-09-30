@@ -32,7 +32,7 @@ class ProjectDetailsModal extends Component {
           var img = images.map((elem, i) => {
             return <div key={i} data-src={elem} />;
           });
-          var img = images[0]
+          var img = images[0];
         }
       }
     }
@@ -76,13 +76,28 @@ class ProjectDetailsModal extends Component {
             >
               {img}
             </AwesomeSlider> */}
-            <img src={img} height="200" width="200"/>
-
+            <img
+              src={img}
+              alt=""
+              height="200"
+              width="200"
+              size="cover"
+              style={{
+                borderRadius: "30px",
+              }}
+            />
           </div>
           <div className="col-md-10 mx-auto">
-            <h3 style={{ padding: "5px 5px 0 5px" }}>
+            <h3
+              style={{
+                padding: "5px 5px 0 5px",
+                fontFamily: "Inter",
+                fontWeight: "bold",
+                fontSize: "24px",
+              }}
+            >
               {title}
-              {url ? (
+              {/* {url ? (
                 <a
                   href={url}
                   target="_blank"
@@ -94,12 +109,12 @@ class ProjectDetailsModal extends Component {
                     style={{ marginLeft: "10px" }}
                   ></i>
                 </a>
-              ) : null}
+              ) : null} */}
             </h3>
             <p className="modal-description">{description}</p>
-            <div className="col-md-12 text-center">
+            {/* <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </Modal>

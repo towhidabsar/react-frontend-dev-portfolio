@@ -26,7 +26,7 @@ Check live demonstration <a href="https://dorota1997.github.io/react-frontend-de
 
 1. Clone or fork project.
 2. Install required dependencies with `npm install`.
-3. Remove `homepage` entirely from `package.json` or set it to single dot. 
+3. Remove `homepage` entirely from `package.json` or set it to single dot.
 
 ```
 // package.json
@@ -60,7 +60,8 @@ homepage property or json data won't load.
 <a href="https://github.com/catalinmiron/react-typical">React Typical</a> <br/>
 <a href="https://iconify.design/icon-sets/?query=angular">Iconify Design</a> <br/>
 <a href="https://www.w3docs.com/snippets/css/how-to-create-polaroid-image-with-css.html#">Polaroid effect</a> <br/>
-<a href="https://tholman.com/github-corners/">GitHub Ref Corner</a>
+
+<!-- <a href="https://tholman.com/github-corners/">GitHub Ref Corner</a> -->
 
 <h3>:memo: Changelog</h3>
 <details>

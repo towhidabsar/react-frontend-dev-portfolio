@@ -1,144 +1,81 @@
 {
-    "basic_info": {
-      "description_header": "Welcome to Citizenly",
-      "description": "Governments around the nation have been embracing data-driven approaches to drive improvements in city operations and citizens’ quality of life. While mega cities (e.g. New York, Chicago, and Boston) have reported impressive results from the use of data in addressing urban issues, midsize cities (e.g. Rochester, NY and other similar sized cities) have mostly lagged behind. Data has played relatively insignificant role in addressing problems of distressed urban neighborhoods. Midsize cities are large enough to have data collection systems in place but cannot afford a cadre of data scientists to make use of them. The open data sets, provided by data.gov and many other organizations, contain raw data requiring specialized skills to access, make sense of, and to compute with it. Moreover, most established open data sets are suitable for conducting macro-level data analysis and require significant efforts in filtering data down to specific scenario of local interests. Citizens and community leaders, key consumers of open data, are thus not able to access, decipher, and use data in meaningful ways. While multitude of tools and algorithms for conducting data science exist, in reality, most of these technologies cannot simply be used by anyone. Democratizing data science is the notion that anyone, with little to no technical expertise, can do data science if provided the right data and user-friendly tools. By putting urban data science in the hands of citizens and community leaders, who are the key community stakeholders, this project will integrate citizens in the development of urban policy and solutions for local issues that pertain to them. Community leaders would like to see data filtered down to their community levels and make the resulting analysis relevant to citizens. The main broader impact of the work is that it can significantly lower the barrier to entry for community leaders and citizens to leverage urban data in a meaningful fashion. Of particular significance is the engagement of neighborhood youths who will become neighborhood innovators, designing technology applications to support neighborhood-based self-sufficiency strategies. Moreover, the project will develop infrastructure that can be replicated for other/similar midsize cities as well pave the way to democratize data science in other domains.",
-      "section_name": {
-        "about": "Concept",
-        "projects": "Team Members",
-        "skills": "Projects",
-        "experience": "Highlights"
-      }
+  "basic_info": {
+    "description_header": "About Citizenly",
+    "description": "Governments around the nation have been embracing data-driven approaches to drive improvements in city operations and citizens’ quality of life. While mega cities (e.g. New York, Chicago, and Boston) have reported impressive results from the use of data in addressing urban issues, midsize cities (e.g. Rochester, NY and other similar sized cities) have mostly lagged behind. Data has played relatively insignificant role in addressing problems of distressed urban neighborhoods. Midsize cities are large enough to have data collection systems in place but cannot afford a cadre of data scientists to make use of them. The open data sets, provided by data.gov and many other organizations, contain raw data requiring specialized skills to access, make sense of, and to compute with it. Moreover, most established open data sets are suitable for conducting macro-level data analysis and require significant efforts in filtering data down to specific scenario of local interests. Citizens and community leaders, key consumers of open data, are thus not able to access, decipher, and use data in meaningful ways. While multitude of tools and algorithms for conducting data science exist, in reality, most of these technologies cannot simply be used by anyone. Democratizing data science is the notion that anyone, with little to no technical expertise, can do data science if provided the right data and user-friendly tools. By putting urban data science in the hands of citizens and community leaders, who are the key community stakeholders, this project will integrate citizens in the development of urban policy and solutions for local issues that pertain to them. Community leaders would like to see data filtered down to their community levels and make the resulting analysis relevant to citizens. The main broader impact of the work is that it can significantly lower the barrier to entry for community leaders and citizens to leverage urban data in a meaningful fashion. Of particular significance is the engagement of neighborhood youths who will become neighborhood innovators, designing technology applications to support neighborhood-based self-sufficiency strategies. Moreover, the project will develop infrastructure that can be replicated for other/similar midsize cities as well pave the way to democratize data science in other domains.",
+    "section_name": {
+      "about": "",
+      "projects": "Team Members",
+      "skills": "Projects",
+      "experience": "Highlights"
+    }
+  },
+  "projects": [
+    {
+      "title": "Naveen Sharma",
+      "startDate": "Professor & Department Chair",
+      "description": "As Chair and Full Professor (Software Engineering) current focus is on software engineering research and education. Interesting focus areas include software analytics and engineering big data software systems.",
+      "images": ["images/portfolio/members/naveen.png"],
+      "url": "",
+      "technologies": []
     },
-    "projects": [
-      {
-        "title": "Naveen Sharma",
-        "startDate": "Professor & Department Chair",
-        "description": "As Chair and Full Professor (Software Engineering) current focus is on software engineering research and education. Interesting focus areas include software analytics and engineering big data software systems.",
-        "images": [
-          "images/portfolio/members/naveen.png"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Ann Howard",
-        "startDate": "Professor",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/members/ann.PNG"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "Ashique Khudabuksh",
-        "startDate": "Assistant Professor",
-        "description": "Ashique KhudaBukhsh is currently an Assistant Professor at the Golisano College of Computing and Information Sciences (GCCIS), Rochester Institute of Technology (RIT). Prior to this role, he was a Project Scientist at the School of Computer Science, Carnegie Mellon University (CMU) mentored by Prof. Tom Mitchell. Prior to this role, he was a postdoc mentored by Prof. Jaime Carbonell at CMU. His PhD thesis (Computer Science Department, Carnegie Mellon University, also advised by Prof. Jaime Carbonell) focused on referral networks, an emerging area at the intersection of Active Learning and Game Theory. His Master's thesis at the University of British Columbia (UBC), advised by Prof. Kevin Leyton-Brown and Prof. Holger H. Hoos, focused on automated algorithm design for combinatorial hard problems. His current research focus is in Computational Social Science. In this field, he is interested in analyzing globally important events in South East Asia and developing methods for noisy social media texts generated in this linguistically diverse region. His other broad focus is US politics; he has offered a graduate course (team-taught with Prof. Mark S. Kamlet and Prof. Tom M. Mitchell) at the intersection of machine learning and political science focusing on the 2020 US election",
-        "images": [
-          "images/portfolio/members/ashique.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Ammina Kothari",
-        "startDate": "Professor",
-        "description": "Ammina Kothari is the director of the Harrington School of Communication and Media and a professor in Journalism. Before joining the University of Rhode Island, Kothari was an associate professor of communication and the Graduate Program Director of Communication MS in the School of Communication at Rochester Institute of Technology. Her interdisciplinary research explores the role of technology in transforming communication and journalism practices. Her research is often grant-funded and in April 2021, Kothari was one of the recipients of the Eisenhart Award for Outstanding Teaching, RIT’s highest honor for tenured faculty.",
-        "images": [
-          "images/portfolio/members/ammina.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Towhid Chowdhury",
-        "startDate": "Ph.D. Candidate",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/members/towhid.PNG"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "Towhid Chowdhury, Naveen Sharma",
-        "title": "Citizenly: A platform to encourage data-driven decision making for the community by the community",
-        "years": "2021",
-        "mainTech": ["Publication"],
-        "url": "https://ieeexplore.ieee.org/abstract/document/9694210/keywords#keywords",
-        "technologies": [
-          "Social computing",
-          "Decision making",
-          "Data science",
-          "Software",
-          "Business",
-          "decision making",
-          "government data processing",
-          "public administration"
-        ]
-      }
-    ]
-  }
+    {
+      "title": "Ann Howard",
+      "startDate": "Professor",
+      "description": "Research Interest: relationship between environmental decision-making and the role of citizen involvement, especially on the local level; sustainable community development, community revitalization and citizen governance; university/community partnerships and community-based learning in higher education",
+      "images": ["images/portfolio/members/ann.PNG"],
+      "url": "https://github.com",
+      "technologies": []
+    },
+    {
+      "title": "Ashique Khudabuksh",
+      "startDate": "Assistant Professor",
+      "description": "Ashique KhudaBukhsh is currently an Assistant Professor at the Golisano College of Computing and Information Sciences (GCCIS), Rochester Institute of Technology (RIT). Prior to this role, he was a Project Scientist at the School of Computer Science, Carnegie Mellon University (CMU) mentored by Prof. Tom Mitchell. Prior to this role, he was a postdoc mentored by Prof. Jaime Carbonell at CMU. His PhD thesis (Computer Science Department, Carnegie Mellon University, also advised by Prof. Jaime Carbonell) focused on referral networks, an emerging area at the intersection of Active Learning and Game Theory. His Master's thesis at the University of British Columbia (UBC), advised by Prof. Kevin Leyton-Brown and Prof. Holger H. Hoos, focused on automated algorithm design for combinatorial hard problems. His current research focus is in Computational Social Science. In this field, he is interested in analyzing globally important events in South East Asia and developing methods for noisy social media texts generated in this linguistically diverse region. His other broad focus is US politics; he has offered a graduate course (team-taught with Prof. Mark S. Kamlet and Prof. Tom M. Mitchell) at the intersection of machine learning and political science focusing on the 2020 US election",
+      "images": ["images/portfolio/members/ashique.jpg"],
+      "url": "",
+      "technologies": []
+    },
+    {
+      "title": "Ammina Kothari",
+      "startDate": "Professor",
+      "description": "Ammina Kothari is the director of the Harrington School of Communication and Media and a professor in Journalism. Before joining the University of Rhode Island, Kothari was an associate professor of communication and the Graduate Program Director of Communication MS in the School of Communication at Rochester Institute of Technology. Her interdisciplinary research explores the role of technology in transforming communication and journalism practices. Her research is often grant-funded and in April 2021, Kothari was one of the recipients of the Eisenhart Award for Outstanding Teaching, RIT’s highest honor for tenured faculty.",
+      "images": ["images/portfolio/members/ammina.jpg"],
+      "url": "",
+      "technologies": []
+    },
+    {
+      "title": "Towhid Chowdhury",
+      "startDate": "Ph.D. Candidate",
+      "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+      "images": ["images/portfolio/members/towhid.PNG"],
+      "url": "",
+      "technologies": []
+    },
+    {
+      "title": "Niranjana Deshpande",
+      "startDate": "Ph.D. Candidate",
+      "description": "",
+      "images": ["images/portfolio/members/user.PNG"],
+      "url": "",
+      "technologies": []
+    }
+  ],
+  "experience": [
+    {
+      "company": "Towhid Chowdhury, Naveen Sharma",
+      "title": "Citizenly: A platform to encourage data-driven decision making for the community by the community",
+      "years": "2021",
+      "mainTech": ["Publication"],
+      "url": "https://ieeexplore.ieee.org/abstract/document/9694210",
+      "technologies": [
+        "Social computing",
+        "Decision making",
+        "Data science",
+        "Software",
+        "Business",
+        "decision making",
+        "government data processing",
+        "public administration"
+      ]
+    }
+  ]
+}
