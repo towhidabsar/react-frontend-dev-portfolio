@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
-import Switch from "react-switch";
-import { Image } from "react";
+import NavigationBar from "../navigation/navbar";
 
 class Header extends Component {
+  // Create route for the home page
+
   titles = [];
 
   constructor() {
@@ -32,65 +33,58 @@ class Header extends Component {
         .map((x) => [x.toUpperCase(), 1500])
         .flat();
     }
-
-    const HeaderTitleTypeAnimation = React.memo(
-      () => {
-        return (
-          <Typical className="title-styles" steps={this.titles} loop={50} />
-        );
-      },
-      (props, prevProp) => true
-    );
-
     return (
       <header
+        to="/"
         id="home"
         style={{
           height: window.innerHeight - 140,
           display: "block",
           background: "#fefacd",
-          backgroundImage: "url(../images/ui.jpg)",
-          // backgroundImage: "url(../images/ROC-3.jpg)",
-          // backgroundImage: "url(../images/Roc1.jpg)",
-          // backgroundImage: "url(../images/Roc2.jpg)",
-          backgroundSize: "contain",
+          backgroundImage: "url(./images/streetview.webp)",
+          backgroundSize: "cover",
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
+          foregroundColor: "black",
         }}
       >
-        {/* create div that takes 50% of screen width and align content to the right */}
-
         <div
           className="row aligner"
           style={{
-            height: "100%",
-            textAlign: "left",
-            alignContent: "start",
-            marginLeft: "3%",
-            paddingLeft: "3%",
-            width: "50%",
-            // background: "rgba(0, 0, 0, 0.5)",
-            float: "right",
+            background: "rgba(0, 0, 0, 0.5)",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            alignContent: "center",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
+          <NavigationBar />
           <div className="col-md-12" style={{ align: "right" }}>
             <div>
-              <img src="../images/icon.png" alt="" width="200" height="200" />
+              <img src="./images/icon.png" alt="" width="200" height="200" />
               <br />
               <h1
                 className="mb-0"
                 style={{
-                  textAlign: "left",
+                  textAlign: "center",
                   fontFamily: "Inter",
                   fontWeight: "700",
+                  color: "white",
                 }}
               >
                 <Typical steps={[name]} wrapper="p" />
                 {/* Citizenly */}
               </h1>
-              <div className="title-container">
+              <div className="title-container" style={{ color: "white" }}>
                 {/* <HeaderTitleTypeAnimation /> */}
                 Democratizing Urban Data Science
+              </div>
+              <div className="subtitle-container" style={{ color: "white" }}>
+                Neighborhood knowledge for residents by residents
               </div>
               <div
                 className="partner-title"
@@ -103,68 +97,21 @@ class Header extends Component {
                 {/* In partnership with */}
                 <div className="partner-container">
                   <img
-                    src="../images/nsf.png"
+                    src="./images/nsf.png"
                     alt=""
                     width="80"
                     height="80"
                     style={{ marginRight: "30px" }}
                   />
                   <img
-                    src="../images/roc.jpg"
+                    src="./images/rit_white_text.png"
                     alt=""
-                    width="100"
-                    height="80"
-                    style={{ marginRight: "30px" }}
-                  />
-                  <img
-                    src="../images/rit.png"
-                    alt=""
-                    width="75"
+                    width="69"
                     height="80"
                     style={{ marginRight: "30px" }}
                   />
                 </div>
               </div>
-              {/* <Switch
-                checked={this.state.checked}
-                onChange={this.onThemeSwitchChange}
-                offColor="#baaa80"
-                onColor="#353535"
-                className="react-switch mx-auto"
-                width={90}
-                height={40}
-                uncheckedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="twemoji:owl"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "20px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                checkedIcon={
-                  <span
-                    className="iconify"
-                    data-icon="noto-v1:sun-with-face"
-                    data-inline="false"
-                    style={{
-                      display: "block",
-                      height: "100%",
-                      fontSize: 25,
-                      textAlign: "end",
-                      marginLeft: "10px",
-                      color: "#353239",
-                    }}
-                  ></span>
-                }
-                id="icon-switch"
-              /> */}
             </div>
           </div>
         </div>

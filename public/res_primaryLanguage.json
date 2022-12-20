@@ -5,8 +5,13 @@
     "section_name": {
       "about": "",
       "projects": "Team Members",
-      "skills": "Projects",
-      "experience": "Highlights"
+      "skills": "Community",
+      "experience": "Timeline",
+      "resources": "Resources",
+      "contact": "Contact",
+      "community": "Community Advisory Board",
+      "projectdetails": "Project Details",
+      "citizenlyapp": "Citizenly App"
     }
   },
   "projects": [
@@ -14,7 +19,7 @@
       "title": "Naveen Sharma",
       "startDate": "Professor & Department Chair",
       "description": "As Chair and Full Professor (Software Engineering) current focus is on software engineering research and education. Interesting focus areas include software analytics and engineering big data software systems.",
-      "images": ["images/portfolio/members/naveen.png"],
+      "images": ["images/portfolio/members/naveen.webp"],
       "url": "",
       "technologies": []
     },
@@ -22,14 +27,14 @@
       "title": "Ann Howard",
       "startDate": "Professor",
       "description": "Research Interest: relationship between environmental decision-making and the role of citizen involvement, especially on the local level; sustainable community development, community revitalization and citizen governance; university/community partnerships and community-based learning in higher education",
-      "images": ["images/portfolio/members/ann.PNG"],
+      "images": ["images/portfolio/members/ann.webp"],
       "url": "https://github.com",
       "technologies": []
     },
     {
       "title": "Ashique Khudabuksh",
       "startDate": "Assistant Professor",
-      "description": "Ashique KhudaBukhsh is currently an Assistant Professor at the Golisano College of Computing and Information Sciences (GCCIS), Rochester Institute of Technology (RIT). Prior to this role, he was a Project Scientist at the School of Computer Science, Carnegie Mellon University (CMU) mentored by Prof. Tom Mitchell. Prior to this role, he was a postdoc mentored by Prof. Jaime Carbonell at CMU. His PhD thesis (Computer Science Department, Carnegie Mellon University, also advised by Prof. Jaime Carbonell) focused on referral networks, an emerging area at the intersection of Active Learning and Game Theory. His Master's thesis at the University of British Columbia (UBC), advised by Prof. Kevin Leyton-Brown and Prof. Holger H. Hoos, focused on automated algorithm design for combinatorial hard problems. His current research focus is in Computational Social Science. In this field, he is interested in analyzing globally important events in South East Asia and developing methods for noisy social media texts generated in this linguistically diverse region. His other broad focus is US politics; he has offered a graduate course (team-taught with Prof. Mark S. Kamlet and Prof. Tom M. Mitchell) at the intersection of machine learning and political science focusing on the 2020 US election",
+      "description": "Ashique KhudaBukhsh is an assistant professor at the Golisano College of Computing and Information Sciences, Rochester Institute of Technology (RIT). His current research lies at the intersection of NLP and AI for Social Impact as applied to: (i) globally important events arising in linguistically diverse regions requiring methods to tackle practical challenges involving multilingual, noisy, social media texts; (ii) polarization in the context of the current US political crisis; and iii) auditing AI systems and platforms for unintended harms. In addition to having his research been accepted at top artificial intelligence conferences and journals, his work has also received widespread international media attention that includes coverage from the New York Times, BBC, Wired, Times of India, the Indian Express, The Independent, VentureBeat, and Digital Trends.",
       "images": ["images/portfolio/members/ashique.jpg"],
       "url": "",
       "technologies": []
@@ -46,7 +51,7 @@
       "title": "Towhid Chowdhury",
       "startDate": "Ph.D. Candidate",
       "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-      "images": ["images/portfolio/members/towhid.PNG"],
+      "images": ["images/portfolio/members/towhid.webp"],
       "url": "",
       "technologies": []
     },
@@ -54,28 +59,9 @@
       "title": "Niranjana Deshpande",
       "startDate": "Ph.D. Candidate",
       "description": "",
-      "images": ["images/portfolio/members/user.PNG"],
+      "images": ["images/portfolio/members/user.png"],
       "url": "",
       "technologies": []
-    }
-  ],
-  "experience": [
-    {
-      "company": "Towhid Chowdhury, Naveen Sharma",
-      "title": "Citizenly: A platform to encourage data-driven decision making for the community by the community",
-      "years": "2021",
-      "mainTech": ["Publication"],
-      "url": "https://ieeexplore.ieee.org/abstract/document/9694210",
-      "technologies": [
-        "Social computing",
-        "Decision making",
-        "Data science",
-        "Software",
-        "Business",
-        "decision making",
-        "government data processing",
-        "public administration"
-      ]
     }
   ]
 }

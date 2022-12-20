@@ -1,5 +1,3 @@
-@import "../src/scss/themes/theme-dark.scss";
-@import "../src/scss/themes/theme-light.scss";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
 
@@ -8,12 +6,7 @@ html {
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
-}
-
-.aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-display: swap;
 }
 
 .title-container {
@@ -23,9 +16,11 @@ html {
   font-size: 2.5rem;
 }
 
-.title-styles {
-  font-family: "Raleway", sans-serif;
-  font-size: 250%;
+.subtitle-container {
+  height: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .header-icon {
@@ -51,11 +46,6 @@ header {
   padding-bottom: 0;
 }
 
-.language-icon {
-  font-size: 50px;
-  cursor: pointer;
-}
-
 .project-date {
   font-size: 14px;
   font-family: "Inter", sans-serif;
@@ -66,24 +56,8 @@ header {
   position: relative;
   z-index: -500;
   border-top: 5px solid #696969;
-  //   border-radius: 0 0 5px 5px;
   background-color: #696969;
   color: white;
-}
-
-.skills-tile {
-  background-color: transparentize(#f8f5f4, 0.95);
-  padding: 10px 10px 5px 10px;
-  width: 100px;
-  margin: 5px 0 5px 0;
-  border-radius: 8px;
-}
-
-.language {
-  font-size: 25px;
-  background-color: #e9d5a1;
-  padding-bottom: 10px;
-  padding-top: 80px;
 }
 
 header h1 {
@@ -132,7 +106,6 @@ header h1 {
 
 .foto img {
   display: block;
-  width: 100%;
   border-radius: 30px 30px 0 0;
 }
 
@@ -219,6 +192,7 @@ header h1 {
 .font-trebuchet {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-display: swap;
 }
 
 #preview {
@@ -239,12 +213,6 @@ header h1 {
   background: #efe1bd;
 }
 
-.experience-icon {
-  font-size: 300%;
-  margin-top: 25%;
-  text-align: center;
-}
-
 .main-badge {
   font-size: 13px !important;
   text-align: left !important;
@@ -254,22 +222,6 @@ header h1 {
   color: white;
   font-weight: lighter !important;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.experience-badge {
-  font-size: 11px !important;
-  text-align: left !important;
-  padding: 5px 8px 5px 8px !important;
-  vertical-align: baseline;
-  background-color: #f9f5e9 !important;
-  color: black;
-  font-weight: lighter !important;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.vertical-timeline-element-date {
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -336,16 +288,8 @@ header h1 {
   cursor: pointer;
 }
 
-// circle background on hover
-.modal-close:hover {
-  background: #313131;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  color: white;
+.store-badges {
+  margin-top: 32px;
 }
 
 .close-icon {
@@ -420,16 +364,111 @@ header h1 {
   padding-bottom: 10%;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -5px;
+  z-index: 2;
+  min-height: 70px;
+  background-color: #fff;
+  padding: 0 1rem;
+  box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: auto;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 0.5rem;
+  font: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: all 0.3s;
+  margin: 0 0.5rem;
+  font: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+/* // Change mouse cursor to pointer when hovering over nav-link */
+.nav-link:hover {
+  cursor: pointer;
+}
+
+/* // Create a rounded border when nav-link is hovered or active, and change the color of text in nav-item to white */
+.nav-link:hover,
+.nav-link.active {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .section-title {
-  padding-top: 5%;
-  padding-bottom: 5%;
   font: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  font-size: 36px;
   color: #fff;
-  text-align: center;
+}
+
+.section-desc {
+  font: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+.nav-btn-selected {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 40px;
+  border-radius: 100px;
+  border-color: transparent;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Shadow */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  font: "Inter", sans-serif;
 }
 
 .skill-icon {
@@ -458,9 +497,4 @@ footer a:visited {
 footer a:hover,
 footer a:focus {
   color: #fff;
-}
-
-.social-links {
-  margin-top: 50px;
-  font-size: 22px;
 }

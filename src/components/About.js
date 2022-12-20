@@ -1,101 +1,84 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
-import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
 
 class About extends Component {
   render() {
-    if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
-    }
-    if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      var about = this.props.resumeBasicInfo.description;
-    }
-
     return (
-      <section id="about">
-        <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
-            <span>{sectionName}</span>
-          </h1>
-          <div className="row center mx-auto mb-5">
-            {/* <div className="col-md-4 mb-5 center"> */}
-            {/* <div className="polaroid"> */}
-            {/* <img src="../images/Icon.png" alt="profilepic" /> */}
-            {/* <span style={{ cursor: "auto" }}>
-                  <img
-                    height="250px"
-                    src={profilepic}
-                    alt="Avatar placeholder"
-                  />
-                  <Icon
-                    icon={angularIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                </span> */}
-            {/* </div>
-            </div> */}
-
-            <div className="col-md-8 center">
-              <div className="col-md-10">
-                <div
-                  className="card"
-                  style={{
-                    borderRadius: "25px",
-                  }}
-                >
-                  <div
-                    className="card-header"
-                    style={{
-                      borderRadius: "25px 25px 0 0",
-                    }}
-                  >
-                    <span
-                      className="iconify"
-                      data-icon="emojione:red-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:yellow-circle"
-                      data-inline="false"
-                    ></span>{" "}
-                    &nbsp;{" "}
-                    <span
-                      className="iconify"
-                      data-icon="twemoji:green-circle"
-                      data-inline="false"
-                    ></span>
-                  </div>
-                  <div
-                    className="card-body font-trebuchet text-justify ml-3 mr-3"
-                    style={{
-                      height: "auto",
-                      fontSize: "132%",
-                      lineHeight: "200%",
-                    }}
-                  >
-                    <br />
-                    <span className="wave">{hello}</span>
-                    <br />
-                    <br />
-                    {about}
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section
+        id="about"
+        style={{
+          backgroundColor: "#f8e8eb",
+        }}
+      >
+        {/* Create row with two columns */}
+        <div className="row">
+          {/* Create column for profile picture */}
+          <div
+            className="col-md-4 mb-5 center"
+            style={{
+              padding: "50px",
+            }}
+          >
+            <img
+              src="./images/lake-aerial.webp"
+              alt="aboutpic"
+              style={{
+                borderRadius: "10px",
+                objectFit: "contain",
+              }}
+              width={320}
+              className="img-fluid"
+            />
+          </div>
+          {/* Column with width = remaining screen */}
+          <div
+            className="col-md-8"
+            style={{
+              padding: "0px 50px",
+              alignSelf: "center",
+            }}
+          >
+            <img
+              src="./images/about-icon.png"
+              alt="profilepic"
+              width={32}
+              height={32}
+            />
+            <p
+              style={{
+                color: "#92162a",
+                textAlign: "top|center",
+              }}
+              className="section-title"
+            >
+              About Citizenly
+            </p>
+            <p
+              style={{
+                color: "#92162a",
+                textAlign: "top|center",
+              }}
+              className="section-desc"
+            >
+              Citizenly is a cyberinfrastructure research project in its early
+              stages that aims to make data science easily accessible to anyone
+              without technical expertise. The Citizenly system aims to engage
+              and empower local communities by democratizing data science among
+              the residents and the local government. Through collaborative data
+              collection, analysis, and actions, Citizenly will provide
+              knowledge and resources to encourage citizen participation,
+              enabling the creation of "smart communities" with smart residents.
+              In contrast to prior open data projects, Citizenly will enable a
+              community-focused approach by providing a "big small data" (i.e. a
+              small data problem within a massive amounts of data) challenge.
+              The multidisciplinary project involves faculty from the Golisano
+              College of Computing and Information Sciences and the College of
+              Liberal Arts at RIT, will also partner with the City of Rochester
+              and Common Ground Health of Rochester NY in this endeavor.
+              Encouraging residents to participate more effectively in their
+              community's activities can lead to richer community engagement,
+              bringing up the possibility for community-based participatory
+              research (CBPR) approaches.
+            </p>
           </div>
         </div>
       </section>
