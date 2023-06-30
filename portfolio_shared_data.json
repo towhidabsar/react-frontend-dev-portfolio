@@ -1,0 +1,19 @@
+{
+  "basic_info": {
+    "name": "Citizenly",
+    "titles": ["Empowering Communities", " Democratizing Urban Data Science"],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com",
+        "class": "fab fa-instagram"
+      }
+    ],
+    "image": "myProfile.jpg"
+  }
+}
